@@ -20,12 +20,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1.5vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.textfield {
+  height: 30px;
+  width: 30em;
+}
+
+.button {
+  background: #61dafb;
+  border-color: #61dafb;
+  border-radius: 5px;
+  height: 45px;
+  width: 15em;
+  color: white;
+  font-size: calc(10px + 1vmin);
+  font-weight: bolder;
 }
 
 @keyframes App-logo-spin {
