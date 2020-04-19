@@ -1,9 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import "react-router-dom";
 import Route from "react-router-dom/es/Route";
-import { LogInComponent, RegisterComponent, ExecuteQueryComponent, ShowLogfileComponent } from "./components/";
+import LogInComponent from "./components/LogInComponent";
+import RegisterComponent from "./components/RegisterComponent";
+import ExecuteQueryComponent from "./components/ExecuteQueryComponent";
+import ShowLogfileComponent from "./components/ShowLogfileComponent";
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
 
       <div className='content'>
         <div className='central-panel'>
+          <Route path="/" component={LogInComponent}/>
           <Route path="/login" component={LogInComponent}/>
           <Route path="/register" component={RegisterComponent}/>
           <Route path="/query" component={ExecuteQueryComponent}/>
