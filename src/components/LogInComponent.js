@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 class LogInComponent extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class LogInComponent extends React.Component {
         return(
             <div>
                 <h1>Log in</h1>
-                <form>
+                <form className="login-form">
                     <label>Username:</label>
                     <br/>
                     <input className="textfield" type="text" onChange={(e, newUsername) =>
@@ -24,9 +25,12 @@ class LogInComponent extends React.Component {
                     <input className="textfield" type="password" onChange={(e, newPassword) =>
                         this.setState({password:newPassword})}>
                     </input>
-                    <br/><br/>
+                    <br/><br/><br/>
                     <input className="button" type="submit" value="Log in"
-                           onClick={(e) => this.handleClick(e)}/>
+                           onClick={(e) => this.handleClick(e)}>
+                    </input>
+                    <br/><br/>
+                    <Link to="/register" className="link">Create an account</Link>
                 </form>
             </div>
         );

@@ -13,7 +13,7 @@ function App() {
 
       <div className='content'>
         <div className='central-panel'>
-          <Route path="/" component={LogInComponent}/>
+          <Route exact path="/" component={LogInComponent}/>
           <Route path="/login" component={LogInComponent}/>
           <Route path="/register" component={RegisterComponent}/>
           <Route path="/query" component={ExecuteQueryComponent}/>
@@ -24,5 +24,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

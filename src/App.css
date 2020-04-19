@@ -13,6 +13,11 @@
   }
 }
 
+h1 {
+  color: deepskyblue;
+  margin-top: -100px;
+}
+
 .central-panel {
   background-color: #282c34;
   min-height: 100vh;
@@ -29,19 +34,39 @@
 }
 
 .textfield {
-  height: 30px;
-  width: 30em;
+  height: 32px;
+  width: 22em;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+tr {
+  text-align: right;
+}
+
+.link {
+  color: #FFF;
+  font-size: 20px;
+}
+.link:hover {
+  color: #61dafb;
 }
 
 .button {
-  background: #61dafb;
+  background: deepskyblue;
   border-color: #61dafb;
-  border-radius: 5px;
-  height: 45px;
+  border-radius: 7px;
+  height: 50px;
   width: 15em;
   color: white;
-  font-size: calc(10px + 1vmin);
+  font-size: calc(15px + 1vmin);
   font-weight: bolder;
+}
+
+.register-label {
+  margin-right: 50px;
 }
 
 @keyframes App-logo-spin {
