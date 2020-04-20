@@ -13,7 +13,7 @@ function App() {
 
       <div className='content'>
         <div className='central-panel'>
-          <Route exact path="/" component={LogInComponent}/>
+          <Route exact path="/" component={ShowLogfileComponent}/>
           <Route path="/login" component={LogInComponent}/>
           <Route path="/register" component={RegisterComponent}/>
           <Route path="/query" component={ExecuteQueryComponent}/>
