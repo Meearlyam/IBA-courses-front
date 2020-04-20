@@ -15,7 +15,13 @@
 
 h1 {
   color: deepskyblue;
-  margin-top: -100px;
+  padding-bottom: 20px;
+}
+
+.log-h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: deepskyblue;
 }
 
 .logfile-form {
@@ -41,6 +47,7 @@ h1 {
   margin-left: 30px;
   margin-top: 10px;
   text-align: left;
+  border-radius: 4px;
 }
 
 .logfile-textarea {
@@ -48,6 +55,9 @@ h1 {
   margin-left: 30px;
   width: 100%;
   height: 30em;
+  border-radius: 5px;
+  max-height: 30em;
+  min-height: 2em;
 }
 
 .central-panel {
@@ -55,14 +65,18 @@ h1 {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /*align-items: center;*/
+  /*justify-content: center;*/
   font-size: calc(10px + 1.5vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.login-form {
+  margin-top: 6em;
 }
 
 .textfield {
@@ -108,8 +122,87 @@ tr {
   font-weight: bolder;
 }
 
+.register-form {
+  margin-top: 5em;
+}
+
+.register-table {
+  margin-left: 30%;
+}
+
 .register-label {
   margin-right: 50px;
+}
+
+.query-form {
+  width: 100%;
+  text-align: left;
+}
+
+.query-form>div {
+  display: inline-block;
+}
+
+.sql-frame {
+  margin-top: 15px;
+}
+
+.button-frame {
+  height: 3em;
+}
+
+.result-frame {
+  margin-left: 10px;
+  height: 13em;
+}
+
+.result-frame>input {
+  border-radius: 5px;
+  width: 66em;
+  height: 20em;
+}
+
+.query-textfield {
+  margin-left: 10px;
+  width: 66em;
+  height: 13em;
+  border-radius: 7px;
+  max-height: 13em;
+  min-height: 13em;
+}
+
+.query-button {
+  background: deepskyblue;
+  border-color: deepskyblue;
+  color: white;
+  font-family: "Segoe UI Semibold", serif;
+  width: 20em;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.button-panel {
+  margin-top: 0;
+  margin-bottom: auto;
+  margin-left: 16%;
+}
+
+.panel-button {
+  background: dodgerblue;
+  border-color: dodgerblue;
+  color: white;
+  margin-top: 20px;
+  font-family: "Segoe UI Semibold", serif;
+  border-radius: 10px;
+  height: 40px;
+  width: 13em;
+}
+
+.panel-link {
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 80px;
 }
 
 @keyframes App-logo-spin {

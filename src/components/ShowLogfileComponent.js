@@ -25,7 +25,7 @@ class ShowLogfileComponent extends React.Component {
         return(
             <div className="logfile-form">
                 <div className="logfile-header">
-                    <div className="date-picker"><label>Your Log files:</label>
+                    <div className="date-picker"><label className="log-h1">Your Log files:</label>
                         <DatePicker
                             className="date-picker"
                             selected={ this.state.startDate }

@@ -19,9 +19,9 @@ class RegisterComponent extends React.Component {
     }
     render() {
         return(
-            <div>
+            <div className="register-form">
                 <h1>Create an account</h1>
-                <table>
+                <table className="register-table">
                     <tr>
                         <td><label className="register-label">Username</label></td>
                         <td>

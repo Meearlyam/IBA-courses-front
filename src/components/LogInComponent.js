@@ -11,9 +11,9 @@ class LogInComponent extends React.Component {
     }
     render() {
         return(
-            <div>
+            <div className="login-form">
                 <h1>Log in</h1>
-                <form className="login-form">
+                <form>
                     <label>Username:</label>
                     <br/>
                     <input className="textfield" type="text" onChange={(e, newUsername) =>
