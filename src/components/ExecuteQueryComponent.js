@@ -24,16 +24,16 @@ class ExecuteQueryComponent extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <div className="button-panel">
+                    <form action="/login" className="button-panel">
                         <input className="panel-button" type="submit" value="Log out"
                                onClick={(e) => this.handleClick(e)}>
                         </input>
-                    </div>
-                    <div className="button-panel">
+                    </form>
+                    <form action="/logfile" className="button-panel">
                         <input className="panel-button" type="submit" value="Open logfile"
                                onClick={(e) => this.handleClick(e)}>
                         </input>
-                    </div>
+                    </form>
                     <div className="button-panel">
                         <input className="panel-button" type="submit" value="Run SQL for Dentistry"
                                onClick={(e) => this.handleClick(e)}>
